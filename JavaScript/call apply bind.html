@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Call, apply and bind</title>
+  </head>
+  <body>
+      This was done by following <a href="https://www.youtube.com/watch?v=c0mLRpw-9rI&t=10s">this</a> tutorial
+      <br>
+      <a href="https://stackoverflow.com/questions/1986896/what-is-the-difference-between-call-and-apply">Apply vs call</a>
+
+    <script>
+      // ---------------- Call ------------
+      let obj = { num: 2 };
+
+      let addToThis = function(a, b) {
+        return this.num + a + b;
+      };
+
+      console.log(addToThis.call(obj, 35, 3));
+      // ----------------  ------------
+
+      // ---------------- Apply ------------
+
+      let arr = [35, 3];
+      console.log(addToThis.apply(obj, arr));
+
+      // ----------------  ------------
+
+      // ---------------- Bind ------------
+      let obj2 = addToThis.bind(obj);
+
+      console.log(obj2(...arr));
+    </script>
+  </body>
+</html>
