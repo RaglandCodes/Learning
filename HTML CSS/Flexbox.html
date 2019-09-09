@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Learning Flexbox</title>
+    <style>
+      @media (min-width: 768px) {
+        .container-1 {
+          display: flex;
+          /* align-items: flex-end;
+        align-items: flex-start;
+        align-items: center; 
+        
+        default is stretch
+        */
+
+          /* flex-direction: column; */
+        }
+        .container-2 {
+          display: flex;
+          /* justify-content: flex-end; */
+          justify-content: space-between;
+          /* flex-wrap: wrap; */
+        }
+      }
+
+      .container-1 div {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      .box-1 {
+        flex: 1;
+        order: 2;
+      }
+      .box-2 {
+        flex: 3;
+        order: 3;
+      }
+      .box-3 {
+        flex: 2;
+        order: 1;
+      }
+
+      .box-2-1 {
+        flex-basis: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="box-1">
+        <h3>Box 1</h3>
+        11111111111111111<br />1111111111111111<br />1111111111<br />
+        1111111111111111111<br />111111111111111111111111<br />
+      </div>
+      <div class="box-2">
+        <h3>Box 2</h3>
+        Done by following
+        <a href="https://youtu.be/JJSoEo8JSnc">this</a> tutorial 22222222222<br />2222222222222222222222222222<br />
+        11111111111111111<br />11111111111111111111<br />111111<br />
+        11111111111111111111111<br />11111111111111111111<br />1111111111111111111111111111111111111111111<br />1111111111111111111111111111111111111111111<br />
+      </div>
+      <div class="box-3">
+        <h3>Box 3</h3>
+        33333<br />333333333333333333333333<br />333333333333333<br />
+        111111111<br />1111111111111111111111111111111111<br />
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div class="box-2-1">
+        <h3>Box 1</h3>
+        1111111<br />1111111111111111<br />1111111111111<br />1111111<br />
+        11111111111<br />1111111111111111<br />111111111111<br />1111<br />
+      </div>
+      <div class="box-2-1">
+        <h3>Box 2</h3>
+        Done by following
+        <a href="https://youtu.be/JJSoEo8JSnc">this</a> tutorial 2222222<br />2222222222222<br />2222222222222222222<br />
+        11111111111<br />11111111111111111<br />111111111111111<br />
+        111111111111111<br />111111111111111111<br />1111111111<br />1111111111111111111<br />111111111111111111111111<br />1111111111<br />1111111111111111<br />11111111111111111<br />
+      </div>
+      <div class="box-2-1">
+        <h3>Box 3</h3>
+        33333<br />333333333333<br />333333333<br />333333333333333333<br />
+        1111111<br />111111111111<br />111111111111111<br />111111111<br />
+      </div>
+    </div>
+  </body>
+</html>
