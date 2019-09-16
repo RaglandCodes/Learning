@@ -1,0 +1,5 @@
+This is to create a React app without using create-react-app CLI.
+
+This was done by following [this](https://youtu.be/deyxI-6C2u4) tutorial.
+
+I did this so that I could use this to create an Relay app. 
