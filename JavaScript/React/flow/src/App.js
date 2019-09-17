@@ -1,16 +1,21 @@
 // @flow
 
+import { GraphQLClient, ClientContext } from 'graphql-hooks'
 import React, { useReducer, useEffect } from "react";
-
 //import { jss } from "react-jss";
 import "./App.css";
 import Paragraph from "./Paragraph";
+import Users from './People'
 import { numberLiteralTypeAnnotation } from "@babel/types";
 
 type stateType = {
   color: string,
   fontSize: number
 }
+
+const client = new GraphQLClient({
+  url: 'https://api.graph.cool/simple/v1/cjl5kyymsba5a0192mamppugb'
+})
 
 
 type actionType = {
@@ -44,6 +49,7 @@ function App() {
 
   // }, [])
   return (
+     <ClientContext.Provider value={client}>
     <div id="App">
       This is the parent element
       <Paragraph text="heello" />
@@ -62,7 +68,10 @@ function App() {
       <button onClick={() => changeTheme({ type: "size", payload: "minus" })}>
         -
       </button>
+
+      <Users />
     </div>
+    </ClientContext.Provider>
   );
 }
 
