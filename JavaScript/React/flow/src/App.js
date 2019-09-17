@@ -1,8 +1,23 @@
+// @flow
+
 import React, { useReducer, useEffect } from "react";
+
+//import { jss } from "react-jss";
 import "./App.css";
 import Paragraph from "./Paragraph";
+import { numberLiteralTypeAnnotation } from "@babel/types";
 
-function themeChanger(state, action) {
+type stateType = {
+  color: string,
+  fontSize: number
+}
+
+
+type actionType = {
+  type: string,
+  payload?: string
+}
+function themeChanger(state: stateType, action: actionType): stateType {
   if (action.type == "theme") {
     console.log("in theme changer");
 
@@ -11,22 +26,25 @@ function themeChanger(state, action) {
       color: state.color === "light" ? "dark" : "light"
     };
   } else {
-    // else change font size
+    return state;
   }
 }
 
 function App() {
-  const [theme, changeTheme] = useReducer(themeChanger, {
+  const [theme, changeTheme] = useReducer((themeChanger), ({
     color: "light",
     fontSize: 20
-  });
+  }));
 
-  useEffect(() => {
-    console.log(JSON.stringify(theme) + "<== latest theme");
-  }, [theme]);
+  // useEffect(() => {
+  //   console.log(JSON.stringify(theme) + "<== latest theme");
+  // }, [theme]);
 
+  // useEffect(() => {
+
+  // }, [])
   return (
-    <div>
+    <div id="App">
       This is the parent element
       <Paragraph text="heello" />
       <Paragraph text="heello again" />
