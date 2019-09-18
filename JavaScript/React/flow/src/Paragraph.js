@@ -1,12 +1,21 @@
 // @flow
 
 import React from "react";
-import { useTheme, createUseStyles } from "react-jss";
+import { makeStyles, useTheme } from "@material-ui/styles";
 
+const useStyles = makeStyles({
+  txt: theme => ({
+    fontSize: theme.fontSize
+  })
+});
 
-function Paragraph({ text }: {text: string}) {
+function Paragraph({ text }: { text: string }) {
+  const theme = useTheme();
+  const classes = useStyles(theme);
+
+  console.log(`${JSON.stringify(theme)} <= theme from parag`);
   return (
-    <p>
+    <p className={classes.txt}>
       {text} This is the text for the paragrah {text}
     </p>
   );

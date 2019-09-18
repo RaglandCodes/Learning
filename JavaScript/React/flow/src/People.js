@@ -1,4 +1,5 @@
-import React from "react";
+// @flow
+import * as React from "react";
 import { useQuery } from "graphql-hooks";
 
 const USERS_QUERY = `query {
@@ -9,7 +10,7 @@ const USERS_QUERY = `query {
   }
 }`;
 
-function Users() {
+function Users(): React.Node {
   const { loading, error, data } = useQuery(USERS_QUERY, {
     variables: {
       limit: 10
@@ -18,12 +19,12 @@ function Users() {
 
   if (loading) return "Loading...";
   if (error) return `Something Bad Happened ${JSON.stringify(error)}`;
-  console.log(`${JSON.stringify(data)} <= data from call`);
+  //console.log(`${JSON.stringify(data)} <= data from call`);
   return (
     <div>
       <h3>Users</h3>
       <ul>
-        {data.allMembers.map(({id, name, email}) => (
+        {data.allMembers.map(({id, name, email}): React.Node=> (
           <li key = {id}> Name: {name} Email : {email}</li>
         ))}
       </ul>
