@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Spinner 1 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Spinner 1 */
+        .spinner-1:before{
+            content:"";
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 60px;
+            width: 60px;
+            margin-top: -30px;
+            margin-left: -30px;
+            border-radius: 50%;
+            animation: spinner 1.7s linear infinite;
+            /* border: 7px solid lightgray;
+            border-top-color: coral; */
+            
+            
+        }
+
+        @keyframes spinner {
+            /* to{
+                transform: rotate(360deg);
+                border-right-color: coral;
+            } */
+            0%{
+                transform: rotate(0deg);
+                border: 7px solid lightgray;
+                border-top-color: orange;
+            }
+            50%{
+                transform: rotate(180deg);
+                border: 7px solid lightgray;
+                border-top-color: darkgoldenrod;
+            }
+            100%{
+                transform: rotate(360deg);
+                border: 7px solid lightgray;
+                border-top-color: orange;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1> Spinner</h1>
+    <p>
+        Done by following <a href="https://youtu.be/BxpjA9t4dJE">this</a> tutorial
+    </p>
+
+    <div class="spinner-1"></div>
+
+
+</body>
+</html>
