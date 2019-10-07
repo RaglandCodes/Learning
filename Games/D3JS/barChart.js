@@ -8,7 +8,7 @@ let svgWidth = 765,
 let barWidth = svgWidth / dataset.length;
 
 let svg = d3
-  .select("svg")
+  .select(".linear-regression")
   .attr("width", svgWidth)
   .attr("height", svgHeight);
 
