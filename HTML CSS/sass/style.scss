@@ -1,0 +1,18 @@
+
+$primartBtn: rgb(64, 15, 156);
+
+@import "./contact";
+
+@mixin pad($p){
+    padding: $p;
+}
+#btn-submit{
+    @include pad(22px);
+    color: $primartBtn;
+}
+
+#btn-ok{
+    @extend #btn-submit;
+    background-color: whitesmoke;
+    // width: 100% -10%;
+}
