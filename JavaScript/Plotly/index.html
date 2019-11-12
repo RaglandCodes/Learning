@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title></title>
+    <style></style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <div id="chart"></div>
+    <div>Done by following <a href="https://youtu.be/2-tnkzG0sKU">this</a></div>
+    <script>
+      function getData() {
+        return Math.random();
+      }
+
+      Plotly.plot('chart', [
+        {
+          y: [getData()],
+          type: 'line'
+        }
+      ]);
+        
+      setInterval(() => {
+        Plotly.extendTraces('chart', {y:[[getData()] ]}, [0])
+      }, 200)
+    </script>
+  </body>
+</html>
