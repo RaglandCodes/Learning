@@ -1,0 +1,14 @@
+<h3>Add customers</h3>
+<form method="POST" action="/customer/add">
+  <input type="text" name="name" placeholder="Add Name" />
+  <input type="text" name="email" placeholder="Add Email" />
+  <input type="submit" value="Submit" />
+</form>
+
+<h3>Customers</h3>
+<% customers.forEach((customer) =>{ %>
+<li>
+  <%= customer.value.name %>
+</li>
+
+<%}) %>
