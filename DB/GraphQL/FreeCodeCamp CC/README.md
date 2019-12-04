@@ -1,5 +1,5 @@
-TBC
+# Learning GraphQL
 
-https://www.youtube.com/watch?v=ed8SzALpx1Q&t=3268s
+Done by following [this](https://www.youtube.com/watch?v=ed8SzALpx1Q&t=3268s) tutorial.
 
-50:09
+I didn't go the MongoDB, front end part
