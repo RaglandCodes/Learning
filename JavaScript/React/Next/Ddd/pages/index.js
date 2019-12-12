@@ -1,7 +1,8 @@
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 
 export default () => (
   <Layout>
-    <div>Hello World.</div>
+    <div>Hello Worlld.</div>
+    <img src="/index.png" />
   </Layout>
 );

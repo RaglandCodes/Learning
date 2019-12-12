@@ -1,8 +1,8 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
-/***/ "./components/layout.js":
+/***/ "./components/Layout.js":
 /*!******************************!*\
-  !*** ./components/layout.js ***!
+  !*** ./components/Layout.js ***!
   \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -15,36 +15,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\Ragland\\Documents\\Coding Projects\\Learning\\JavaScript\\React\\Next\\Ddd\\components\\layout.js";
+var _jsxFileName = "/home/ragland/Documents/Coding Projects/Learning/JavaScript/React/Next/Ddd/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-/* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
+
+var Layout = function Layout(_ref) {
   var children = _ref.children;
   return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, __jsx("title", {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
+    },
+    __self: this
+  }, __jsx("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
     },
     __self: this
   }, "Site"), __jsx("meta", {
     charSet: "utf-8",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }), __jsx("meta", {
@@ -52,62 +53,64 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     content: "initial-scale=1.0, width=device-width",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   })), __jsx("header", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, __jsx("nav", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, "Home")), ' ', "|", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, "About")), ' ', "|", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }, "Contact")))), children);
-});
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 /***/ }),
 
@@ -5113,10 +5116,10 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CRagland%5CDocuments%5CCoding%20Projects%5CLearning%5CJavaScript%5CReact%5CNext%5CDdd%5Cpages%5Cindex.js!./":
-/*!***********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CRagland%5CDocuments%5CCoding%20Projects%5CLearning%5CJavaScript%5CReact%5CNext%5CDdd%5Cpages%5Cindex.js ***!
-  \***********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fragland%2FDocuments%2FCoding%20Projects%2FLearning%2FJavaScript%2FReact%2FNext%2FDdd%2Fpages%2Findex.js!./":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fragland%2FDocuments%2FCoding%20Projects%2FLearning%2FJavaScript%2FReact%2FNext%2FDdd%2Fpages%2Findex.js ***!
+  \******************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7881,12 +7884,12 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_ce55a549e3439867a796 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_9aaf654d4f8f592c0a05 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce55a549e3439867a796 */ "dll-reference dll_ce55a549e3439867a796"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9aaf654d4f8f592c0a05 */ "dll-reference dll_9aaf654d4f8f592c0a05"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -8359,12 +8362,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_ce55a549e3439867a796 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_9aaf654d4f8f592c0a05 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce55a549e3439867a796 */ "dll-reference dll_ce55a549e3439867a796"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9aaf654d4f8f592c0a05 */ "dll-reference dll_9aaf654d4f8f592c0a05"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -8999,12 +9002,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_ce55a549e3439867a796 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_9aaf654d4f8f592c0a05 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce55a549e3439867a796 */ "dll-reference dll_ce55a549e3439867a796"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9aaf654d4f8f592c0a05 */ "dll-reference dll_9aaf654d4f8f592c0a05"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -9475,12 +9478,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_ce55a549e3439867a796 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_9aaf654d4f8f592c0a05 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ce55a549e3439867a796 */ "dll-reference dll_ce55a549e3439867a796"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9aaf654d4f8f592c0a05 */ "dll-reference dll_9aaf654d4f8f592c0a05"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -11068,13 +11071,13 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-var _jsxFileName = "C:\\Users\\Ragland\\Documents\\Coding Projects\\Learning\\JavaScript\\React\\Next\\Ddd\\pages\\index.js";
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+var _jsxFileName = "/home/ragland/Documents/Coding Projects/Learning/JavaScript/React/Next/Ddd/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
@@ -11086,31 +11089,38 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 5
     },
     __self: this
-  }, "Hello World."));
+  }, "Hello Worlld."), __jsx("img", {
+    src: "/index.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }));
 });
 
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CRagland%5CDocuments%5CCoding%20Projects%5CLearning%5CJavaScript%5CReact%5CNext%5CDdd%5Cpages%5Cindex.js ***!
-  \***************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fragland%2FDocuments%2FCoding%20Projects%2FLearning%2FJavaScript%2FReact%2FNext%2FDdd%2Fpages%2Findex.js ***!
+  \**********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CRagland%5CDocuments%5CCoding%20Projects%5CLearning%5CJavaScript%5CReact%5CNext%5CDdd%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CUsers%5CRagland%5CDocuments%5CCoding%20Projects%5CLearning%5CJavaScript%5CReact%5CNext%5CDdd%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fragland%2FDocuments%2FCoding%20Projects%2FLearning%2FJavaScript%2FReact%2FNext%2FDdd%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fragland%2FDocuments%2FCoding%20Projects%2FLearning%2FJavaScript%2FReact%2FNext%2FDdd%2Fpages%2Findex.js!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_ce55a549e3439867a796":
+/***/ "dll-reference dll_9aaf654d4f8f592c0a05":
 /*!*******************************************!*\
-  !*** external "dll_ce55a549e3439867a796" ***!
+  !*** external "dll_9aaf654d4f8f592c0a05" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_ce55a549e3439867a796;
+module.exports = dll_9aaf654d4f8f592c0a05;
 
 /***/ })
 
