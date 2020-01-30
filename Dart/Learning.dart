@@ -3,6 +3,7 @@ main(){
 //void main(){
   //'void' can be avoided
   //Dart program starts with main
+// use const iff value is already known
   
   stdout.writeln('Name : ');
   String name = stdin.readLineSync();
