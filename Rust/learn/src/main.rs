@@ -4,7 +4,8 @@ mod types;
 
 fn main() {
     //print::run();
-    print::vars();
+    //print::vars();
+    vars::run();
 
     //print::types();
 }

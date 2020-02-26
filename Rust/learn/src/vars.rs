@@ -6,4 +6,7 @@ pub fn run(){
     // Must say type in const
 
     let (my_name, my_age) = ("Ragland", 20);
+
+    println!("age: {}", my_age)
+    println!("name: {}", my_name)
 }
