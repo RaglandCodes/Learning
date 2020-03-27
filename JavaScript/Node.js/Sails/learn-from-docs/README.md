@@ -24,6 +24,10 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
 
 Actions respond are bound to routes and respond to requests. They're in between M and V. Actions are in api/controllers.
 
+```
+sails generate action
+```
+
 ### Helpers
 
 Can be used in more than 1 place.
@@ -36,3 +40,5 @@ Run JS functions as shell scripts.
 sails generate script hello
 sails run hello
 ```
+### Policies
+Polices can be used to execute a logic before action is run. Apply to actions and controlers, and do not apply to views. Use sparingly; better do checks in actions/controllers.
