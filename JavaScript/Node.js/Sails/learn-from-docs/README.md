@@ -1,7 +1,5 @@
 # learn-from-docs
 
-a [Sails v1](https://sailsjs.com) application
-
 ### Links
 
 - [Sails framework documentation](https://sailsjs.com/get-started)
@@ -22,15 +20,20 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
 
 ### Actions
 
-Actions respond are bound to routes and respond to requests. They're in between M and V. Actions are in api/controllers.
+Actions are bound to routes and respond to requests. They're in between M and V. Actions are in `api/controllers`.
 
 ```
 sails generate action
 ```
 
+### Controller
+```
+sails generate controller 
+```
+
 ### Helpers
 
-Can be used in more than 1 place.
+Can be used in more than 1 place. Put reusable code here. [Example](https://sailsjs.com/documentation/concepts/helpers/example-helper).
 
 ### Shell scripts
 
@@ -41,4 +44,8 @@ sails generate script hello
 sails run hello
 ```
 ### Policies
-Polices can be used to execute a logic before action is run. Apply to actions and controlers, and do not apply to views. Use sparingly; better do checks in actions/controllers.
+Middleware. Polices can be used to execute a logic before action is run. Apply to actions and controlers, and do not apply to views. Use sparingly; better do checks in actions/controllers.
+
+
+### Hooks
+Add functionality to sails core.

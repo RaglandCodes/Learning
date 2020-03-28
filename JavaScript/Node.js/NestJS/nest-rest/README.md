@@ -9,7 +9,7 @@ $ npm install
 ```bash
 # development
 $ npm run start
-
+k
 # watch mode
 $ npm run start:dev
 
@@ -33,16 +33,34 @@ $ npm run test:cov
 
 ## Notes
 
-Done by following [this](https://youtu.be/wqhNoDE6pb4) tutorial. TBC 35:39
+Done by following [this](https://youtu.be/wqhNoDE6pb4) tutorial. TBC 41:49
 
 ### Controllers
 
-Handle requests and return responses.
+Handle requests and return responses. Delegate more complex tasks to providers.
 ```
-nest g controller items
+$ nest g controller items
 ```
 
-A DTO is an object that defines how data is sent over the network.
+**DTO** is an object that defines how data is sent over the network.
 
 ### Decorator
 Stuff with @. Used for meta data?.
+
+### Service
+
+```
+$ nest g service cats
+```
+
+### Module
+Classes with @Module. Used to build application graph.
+```
+$ nest g module cat
+```
+`app.module.ts` is like a meeting place for [everything](https://youtu.be/wqhNoDE6pb4?t=2295)
+
+### Provider
+Can inject dependencies. A class with the @Injectable thingy.
+
+### Database
