@@ -1,6 +1,8 @@
 Container is a widget class that allows to customize its child widget. Add things into a container for margin / padding.
 
 
+Builder is a function that returns a Widget.
+
 ### CLI [.](https://medium.com/flutter-community/flutter-and-the-command-line-a-love-story-a3648ef2411)
 
 ```
@@ -17,3 +19,5 @@ When doing flutter run, clicking p and s gives construction lines and saves scre
 	- click Alt+Enter to wrap, remove, etc the widget.
 	- Ctrl + W to select entire widget
 - Format Ctrl+Alt+L
+
+

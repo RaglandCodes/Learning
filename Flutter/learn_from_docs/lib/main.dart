@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
-
+import 'package:logger/logger.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         title: "Welcome to Flutter",
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primaryColor: Colors.white,
           fontFamily: 'Georgia'
@@ -28,6 +30,16 @@ class RandomWordsState extends State<RandomWords> {
 
   Widget _buildRow(WordPair pair) {
     final bool alreadySaved = _saved.contains(pair);
+    final log = Logger(
+      printer: PrettyPrinter(
+        methodCount: 0,
+        errorMethodCount: 3,
+        lineLength: 50,
+        colors: true,
+        printTime: false
+      )
+    );
+
     return ListTile(
       title: Text(
         pair.asPascalCase,
@@ -38,6 +50,8 @@ class RandomWordsState extends State<RandomWords> {
         color: alreadySaved ? Colors.red : null,
       ),
       onTap: () {
+        log.v("Tapped");
+        log.d('Tapped de');
         setState(() {
           if (alreadySaved) {
             _saved.remove(pair);
