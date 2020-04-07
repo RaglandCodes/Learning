@@ -1,20 +1,18 @@
-import 'package:brewcrew/models/user.dart';
-import 'package:brewcrew/screens/authenticate/authenticate.dart';
-import 'package:brewcrew/screens/authenticate/register.dart';
 import 'package:brewcrew/services/auth.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class SignIn extends StatefulWidget {
+class Register extends StatefulWidget {
   final Function toggleView;
 
-  SignIn({this.toggleView});
+  Register({this.toggleView});
 
   @override
-  _SignInState createState() => _SignInState();
+  _RegisterState createState() => _RegisterState();
 }
 
-class _SignInState extends State<SignIn> {
+class _RegisterState extends State<Register> {
+  final AuthService _auth = AuthService();
+
   String email = '';
   String password = '';
 
@@ -25,14 +23,14 @@ class _SignInState extends State<SignIn> {
       appBar: AppBar(
         backgroundColor: Colors.brown,
         elevation: 0,
-        title: Text('Sign in to Brew Crew'),
+        title: Text('Register to Brew Crew'),
         actions: <Widget>[
           FlatButton.icon(
             onPressed: () {
               widget.toggleView();
             },
             icon: Icon(Icons.person),
-            label: Text("Register"),
+            label: Text("Sign in"),
           )
         ],
       ),
@@ -68,7 +66,7 @@ class _SignInState extends State<SignIn> {
               RaisedButton(
                 color: Colors.pink,
                 child: Text(
-                  'Sign In',
+                  'Register',
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () async {},
