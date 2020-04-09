@@ -2,6 +2,8 @@ import 'package:brewcrew/models/user.dart';
 import 'package:brewcrew/screens/authenticate/authenticate.dart';
 import 'package:brewcrew/screens/authenticate/register.dart';
 import 'package:brewcrew/services/auth.dart';
+import 'package:brewcrew/shared/constants.dart';
+import 'package:brewcrew/shared/loading.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -21,10 +23,11 @@ class _SignInState extends State<SignIn> {
 
   final AuthService _auth = AuthService();
   final _formKey = GlobalKey<FormState>();
+  bool loading = false;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return loading?Loading(): Scaffold(
       backgroundColor: Colors.brown[100],
       appBar: AppBar(
         backgroundColor: Colors.brown,
@@ -50,6 +53,7 @@ class _SignInState extends State<SignIn> {
                 height: 20,
               ),
               TextFormField(
+                decoration: textInputDecoration,
                 onChanged: (val) {
                   setState(() {
                     email = val;
@@ -61,6 +65,7 @@ class _SignInState extends State<SignIn> {
               ),
               TextFormField(
                 obscureText: true,
+                decoration: textInputDecoration.copyWith(hintText: 'Password'),
                 onChanged: (val) {
                   setState(() {
                     password = val;
@@ -77,8 +82,16 @@ class _SignInState extends State<SignIn> {
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () async {
+                  setState(() {
+                    loading = true;
+                  });
+
                   dynamic result =
                       await _auth.signInWithEmailAndPassword(email, password);
+
+                  setState(() {
+                    loading = false;
+                  });
                 },
               )
             ],
