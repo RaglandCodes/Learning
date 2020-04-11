@@ -5,21 +5,23 @@ import 'package:flutter/material.dart';
 import 'package:brewcrew/services/database.dart';
 import 'package:provider/provider.dart';
 import 'package:brewcrew/screens/home/brew_list.dart';
+
 class Home extends StatelessWidget {
   final AuthService _auth = AuthService();
 
-
   @override
   Widget build(BuildContext context) {
-
     void _showSettingsPanel() {
-      showModalBottomSheet(context: context, builder: (context){
-        return Container(
-          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-          child: SettingsForm(),
-        );
-      });
+      showModalBottomSheet(
+          context: context,
+          builder: (context) {
+            return Container(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+              child: SettingsForm(),
+            );
+          });
     }
+
     return StreamProvider<List<Brew>>.value(
       value: DatabaseService().brews,
       child: Scaffold(
@@ -35,10 +37,21 @@ class Home extends StatelessWidget {
               icon: Icon(Icons.person),
               label: Text('Logout'),
             ),
-            FlatButton.icon(onPressed: () => _showSettingsPanel(), icon: Icon(Icons.settings), label: Text("Settings"))
+            FlatButton.icon(
+                onPressed: () => _showSettingsPanel(),
+                icon: Icon(Icons.settings),
+                label: Text("Settings"))
           ],
         ),
-        body: BrewList(),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/coffee_bg.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: BrewList(),
+        ),
       ),
     );
   }
